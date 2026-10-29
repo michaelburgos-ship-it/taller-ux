@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TecnoShop - Tienda virtual</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <header class="encabezado">
+        <div class="encabezado-contenido">
+            <div>
+                <h1>TecnoShop</h1>
+                <p>Accesorios tecnológicos para tu día a día</p>
+            </div>
+
+            <a class="enlace-carrito" href="#carrito">
+                Mi carrito
+                <span id="cantidad-carrito">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="bienvenida">
+            <h2>¡Bienvenido a nuestra tienda!</h2>
+            <p>Encuentra tus accesorios favoritos a precios especiales.</p>
+        </section>
+
+        <section class="seccion-productos">
+            <h2>Nuestros productos</h2>
+
+            <div id="lista-productos" class="productos">
+            </div>
+
+            <p id="mensaje" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="carrito" class="seccion-carrito">
+            <h2>Mi carrito de compras</h2>
+
+            <p id="carrito-vacio">
+                Todavía no agregaste productos al carrito.
+            </p>
+
+            <ul id="lista-carrito"></ul>
+
+            <div class="resumen">
+                <p>
+                    <strong>Total:</strong>
+                    <span id="total">S/ 0.00</span>
+                </p>
+
+                <button id="btn-comprar" type="button">
+                    Finalizar compra
+                </button>
+            </div>
+
+            <p id="mensaje-carrito" role="status" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto de práctica - Laboratorio 11 de UX/UI</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
